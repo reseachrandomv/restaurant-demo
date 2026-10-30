@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kandu Table — Kitchen & Café, Malé (Demo)</title>
+<meta name="description" content="Kandu Table is a fictional demo restaurant website: Maldivian kitchen and café in Malé.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="nav"><a href="#top" class="logo">Kandu<span>Table</span></a>
+<button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+<nav class="links"><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a href="#reserve" class="btn sm">Reserve</a></nav></header>
+<main id="top">
+<section class="hero"><img src="img/hero.jpg" alt="Grilled reef fish with coconut on a deck over the lagoon"><div class="hero-in">
+<p class="eyebrow">Kitchen &amp; Café · Malé</p><h1>Island cooking,<br><em>slowly</em> done.</h1>
+<p class="lede">Reef fish off the morning boats, coconut grated by hand, and coffee worth staying for.</p>
+<div class="cta"><a href="#reserve" class="btn">Book a table</a><a class="btn ghost wa" data-msg="Hi Kandu Table, I'd like to place an order." href="#">Order on WhatsApp</a></div></div></section>
+
+<section id="about" class="about wrap reveal"><div><p class="eyebrow">Our story</p><h2>A small table by the harbour.</h2>
+<p>Kandu means “sea channel” in Dhivehi. We cook the way island kitchens always have: what the sea and the season give us, with chilli, curry leaf, smoked tuna and lime. Mornings are for roshi and mas huni, evenings for the grill.</p>
+<ul class="facts"><li><b>14</b><span>seats on the terrace</span></li><li><b>06:30</b><span>breakfast from</span></li><li><b>100%</b><span>local catch</span></li></ul></div>
+<img src="img/interior.jpg" alt="Calm whitewashed dining room facing the sea" loading="lazy"></section>
+
+<section id="menu" class="menu reveal"><div class="wrap"><p class="eyebrow">Digital menu</p><h2>What we're cooking</h2>
+<div class="tabs" role="tablist"></div><div class="items"></div><p class="note">Prices in MVR, inclusive of GST. Sample prices for demo.</p></div></section>
+
+<section id="gallery" class="gallery wrap reveal"><p class="eyebrow">Gallery</p><h2>From the pass</h2>
+<div class="grid"><figure class="g-big"><img src="img/hero.jpg" alt="Grilled reef fish" loading="lazy"><figcaption>Grilled reef fish, coconut, curry leaf</figcaption></figure>
+<figure><img src="img/breakfast.jpg" alt="Mas huni with roshi" loading="lazy"><figcaption>Mas huni &amp; roshi</figcaption></figure>
+<figure class="g-tall"><img src="img/cafe.jpg" alt="Iced coconut latte and passion fruit cake" loading="lazy"><figcaption>Coconut latte, passion fruit cake</figcaption></figure>
+<figure><img src="img/interior.jpg" alt="Dining room at dusk" loading="lazy"><figcaption>The room at dusk</figcaption></figure></div></section>
+
+<section id="visit" class="visit reveal"><div class="wrap two"><div><p class="eyebrow">Visit</p><h2>Opening hours</h2>
+<table class="hours"><tr><td>Saturday – Thursday</td><td>06:30 – 23:00</td></tr><tr><td>Friday</td><td>14:00 – 23:30</td></tr><tr><td>Kitchen closes</td><td>22:30</td></tr></table>
+<p class="today" id="today"></p><p class="addr">Boduthakurufaanu Magu, Malé, Maldives<br><small>Fictional address area for demo</small></p></div>
+<div class="map"><iframe title="Map of Malé" loading="lazy" src="https://www.google.com/maps?q=Male,+Maldives&z=14&output=embed"></iframe></div></div></section>
+
+<section id="reserve" class="reserve wrap reveal"><div class="two"><div><p class="eyebrow">Reservations</p><h2>Save a table</h2>
+<p>Send us your request and we'll confirm by message. Nothing is booked until we reply.</p>
+<div class="qr"><img src="img/menu-qr.svg" alt="QR code linking to the menu"><div><b>Menu at the table</b><p>Print this QR on table cards. Guests scan it and land straight on the menu.</p><a href="img/menu-qr.svg" download class="link">Download QR</a></div></div></div>
+<form id="form"><label>Name<input name="name" required></label><div class="row"><label>Date<input type="date" name="date" required></label><label>Time<input type="time" name="time" required value="19:30"></label></div>
+<div class="row"><label>Guests<select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></label><label>Phone<input name="phone" type="tel"></label></div>
+<label>Notes<textarea name="notes" rows="3" placeholder="Allergies, occasion, seating"></textarea></label>
+<div class="row"><button class="btn" data-via="wa">Send via WhatsApp</button><button class="btn ghost dark" data-via="mail">Send by email</button></div></form></div></section>
+</main>
+<a class="float wa" data-msg="Hi Kandu Table, I'd like to place an order." href="#" aria-label="Order on WhatsApp">WhatsApp</a>
+<footer><div class="wrap"><a href="#top" class="logo">Kandu<span>Table</span></a>
+<p><b>Demo website.</b> Kandu Table is a fictional restaurant. The WhatsApp number (+960 000 0000) and email are placeholders, and photos are AI-generated.</p>
+<p>Design &amp; build by Fathimath Malaak Jaufar · <a href="https://reseachrandomv.github.io/cv/">Portfolio</a></p></div></footer>
+<script src="script.js"></script></body></html>
